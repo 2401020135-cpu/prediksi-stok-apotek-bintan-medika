@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File (Mingguan_tanpa_grosir)" position="(242.0, 165.0)" />
+		<node id="1" name="Form Timeseries" qualified_name="orangecontrib.timeseries.widgets.owtabletotimeseries.OWTableToTimeseries" project_name="Orange3-Timeseries" version="" title="Form Timeseries" position="(439.16666666666674, 135.5)" />
+		<node id="2" name="Line Chart" qualified_name="orangecontrib.timeseries.widgets.owlinechart.OWLineChart" project_name="Orange3-Timeseries" version="" title="Line Chart (EDA Data Asli)" position="(732.0, 127.0)" />
+		<node id="3" name="Moving Transform" qualified_name="orangecontrib.timeseries.widgets.owmovingtransform.OWMovingTransform" project_name="Orange3-Timeseries" version="" title="Moving Transform" position="(668.3333333333335, 296.0)" />
+		<node id="4" name="Line Chart" qualified_name="orangecontrib.timeseries.widgets.owlinechart.OWLineChart" project_name="Orange3-Timeseries" version="" title="Line Chart (asli vs MA/EMA)" position="(958.3333333333335, 322.5)" />
+		<node id="5" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Python Script (MA. SES, MAPE)" position="(409.83333333333337, 313.33333333333337)" />
+		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (60 Kombinasi)" position="(644.8333333333335, 496.5)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="1" sink_node_id="2" source_channel="Time series" sink_channel="Time series" enabled="true" source_channel_id="time_series" sink_channel_id="time_series" />
+		<link id="1" source_node_id="1" sink_node_id="3" source_channel="Time series" sink_channel="Time series" enabled="true" source_channel_id="time_series" sink_channel_id="time_series" />
+		<link id="2" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Time series" sink_channel="Time series" enabled="true" source_channel_id="time_series" sink_channel_id="time_series" />
+		<link id="4" source_node_id="0" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="5" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVqwoAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZQojB5v
+cmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRolJOUKYGUfZQojAdhYnNw
+YXRolIxHQzovUHJvamVjdCBEYXRhIE1pbmluZy9oYXNpbF9wcmVwcm9jZXNzaW5nL2RhdGFfbWlu
+Z2d1YW5fc2lhcF9vbGFoLnhsc3iUjAZwcmVmaXiUjAdiYXNlZGlylIwHcmVscGF0aJSMMGhhc2ls
+X3ByZXByb2Nlc3NpbmcvZGF0YV9taW5nZ3Vhbl9zaWFwX29sYWgueGxzeJSMBXRpdGxllIwAlIwF
+c2hlZXSUjBVNaW5nZ3Vhbl90YW5wYV9ncm9zaXKUjAtmaWxlX2Zvcm1hdJROdWJoBimBlH2UKGgJ
+jFpDOi9Vc2Vycy9IWVBFIEFNRC9BcHBEYXRhL0xvY2FsL1Byb2dyYW1zL09yYW5nZS9MaWIvc2l0
+ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0YXNldHMvaXJpcy50YWKUaAuMD3NhbXBsZS1kYXRhc2V0c5Ro
+DYwIaXJpcy50YWKUaA9oEGgRaBBoE051YmgGKYGUfZQoaAmMXUM6L1VzZXJzL0hZUEUgQU1EL0Fw
+cERhdGEvTG9jYWwvUHJvZ3JhbXMvT3JhbmdlL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRh
+c2V0cy90aXRhbmljLnRhYpRoC2gXaA2MC3RpdGFuaWMudGFilGgPaBBoEWgQaBNOdWJoBimBlH2U
+KGgJjF1DOi9Vc2Vycy9IWVBFIEFNRC9BcHBEYXRhL0xvY2FsL1Byb2dyYW1zL09yYW5nZS9MaWIv
+c2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0YXNldHMvaG91c2luZy50YWKUaAtoF2gNjAtob3VzaW5n
+LnRhYpRoD2gQaBFoEGgTTnViaAYpgZR9lChoCYxjQzovVXNlcnMvSFlQRSBBTUQvQXBwRGF0YS9M
+b2NhbC9Qcm9ncmFtcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2RhdGFzZXRzL2hl
+YXJ0X2Rpc2Vhc2UudGFilGgLaBdoDYwRaGVhcnRfZGlzZWFzZS50YWKUaA9oEGgRaBBoE051YmgG
+KYGUfZQoaAmMZEM6L1VzZXJzL0hZUEUgQU1EL0FwcERhdGEvTG9jYWwvUHJvZ3JhbXMvT3Jhbmdl
+L0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRhc2V0cy9icm93bi1zZWxlY3RlZC50YWKUaAto
+F2gNjBJicm93bi1zZWxlY3RlZC50YWKUaA9oEGgRaBBoE051YmgGKYGUfZQoaAmMWUM6L1VzZXJz
+L0hZUEUgQU1EL0FwcERhdGEvTG9jYWwvUHJvZ3JhbXMvT3JhbmdlL0xpYi9zaXRlLXBhY2thZ2Vz
+L09yYW5nZS9kYXRhc2V0cy96b28udGFilGgLaBdoDYwHem9vLnRhYpRoD2gQaBFoEGgTTnViZYwL
+cmVjZW50X3VybHOUXZSME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAABFAAAAFjAAAG
+qQAAA/QAAARRAAABggAABqgAAAPzAAAAAAAAAAAHgAAABFEAAAGCAAAGqAAAA/OUjAtzaGVldF9u
+YW1lc5R9lIwGc291cmNllEsAjAN1cmyUaBCMDWRvbWFpbl9lZGl0b3KUfZSMC19fdmVyc2lvbl9f
+lEsBjBBjb250ZXh0X3NldHRpbmdzlF2UKIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4
+dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwJdmFyaWFibGVzlF2UaDV9lGhBXZQoXZQojAxtaW5nZ3Vf
+bXVsYWmUjBRPcmFuZ2UuZGF0YS52YXJpYWJsZZSMDFRpbWVWYXJpYWJsZZSTlEsAaBCIZV2UKIwH
+QU5EQUxBTpRoR4wSQ29udGludW91c1ZhcmlhYmxllJOUSwBoEIhlXZQojAVWSUNFRZRoTUsAaBCI
+ZV2UKIwHS0FESVRJQ5RoTUsAaBCIZV2UKIwHTUVGSU5BTJRoTUsAaBCIZV2UKIwRREVYQUhBUlNF
+TiAwLDc1TUeUaE1LAGgQiGVlc2g3SwF1jAphdHRyaWJ1dGVzlCiMDG1pbmdndV9tdWxhaZRLBIaU
+aEtLAoaUaE9LAoaUaFFLAoaUaFNLAoaUaFVLAoaUdJSMBW1ldGFzlCmMCmNsYXNzX3ZhcnOUKYwS
+bW9kaWZpZWRfdmFyaWFibGVzlF2UdWJoPCmBlH2UKGg/fZQoaEFdlGg1fZRoQV2UKF2UKIwGc2F0
+dWFulGhHjBBEaXNjcmV0ZVZhcmlhYmxllJOUSwCMhkFtcHVsLCBCaWppLCBCb3RvbCwgQm94LCBC
+dW5na3VzLCBCdXRpciwgS2FsZW5nLCBLYXBzdWwsIEtvdGFrLCBMZW1iYXIsIFBhY2ssIFBjcywg
+UG90LCBQc2csIFNhY2hldCwgU3RyaXAsIFN1cHBvcywgVGFibGV0LCBUdWJlLCBWaWFslIllXZQo
+jAx0b3RhbF9qdW1sYWiUaE1LAGgQiGVdlCiMEGp1bWxhaF90cmFuc2Frc2mUaE1LAGgQiGVdlCiM
+DGhhcmlfdGVyanVhbJRoTUsAaBCIZV2UKIwUbWVkaWFuX3Blcl90cmFuc2Frc2mUaE1LAGgQiGVd
+lCiMDGJhcmlzX2dyb3NpcpRoTUsAaBCIZV2UKIwTcGVyc2VuX2hhcmlfdGVyanVhbJRoTUsAaBCI
+ZV2UKIwLTmFtYSBQcm9kdWuUaEeMDlN0cmluZ1ZhcmlhYmxllJOUSwJoEIllZXNoN0sBdWhWKGhq
+XZQojAVBbXB1bJSMBEJpammUjAVCb3RvbJSMA0JveJSMB0J1bmdrdXOUjAVCdXRpcpSMBkthbGVu
+Z5SMBkthcHN1bJSMBUtvdGFrlIwGTGVtYmFylIwEUGFja5SMA1Bjc5SMA1BvdJSMA1BzZ5SMBlNh
+Y2hldJSMBVN0cmlwlIwGU3VwcG9zlIwGVGFibGV0lIwEVHViZZSMBFZpYWyUZYaUaG9LAoaUaHFL
+AoaUaHNLAoaUaHVLAoaUaHdLAoaUaHlLAoaUdJRoX2h7SwOGlIWUaGApaGFdlHViaDwpgZR9lCho
+P32UKGhBXZRoNX2UaEFdlChdlCiMDHNlcGFsIGxlbmd0aJRoTUsAaBCIZV2UKIwLc2VwYWwgd2lk
+dGiUaE1LAGgQiGVdlCiMDHBldGFsIGxlbmd0aJRoTUsAaBCIZV2UKIwLcGV0YWwgd2lkdGiUaE1L
+AGgQiGVdlCiMBGlyaXOUaGxLAYwsSXJpcy1zZXRvc2EsIElyaXMtdmVyc2ljb2xvciwgSXJpcy12
+aXJnaW5pY2GUiWVlc2g3SwF1aFYoaKVLAoaUaKdLAoaUaKlLAoaUaKtLAoaUdJRoXyloYGitXZQo
+jAtJcmlzLXNldG9zYZSMD0lyaXMtdmVyc2ljb2xvcpSMDklyaXMtdmlyZ2luaWNhlGWGlIWUaGFd
+lHViZXUu
+</properties>
+		<properties node_id="1" format="literal">{'attribute': 'minggu_mulai', 'autocommit': True, 'controlAreaVisible': True, 'implied_sequence': 0, 'include_extra_part': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x05\x03\x00\x00\x02!\x00\x00\x06\x1a\x00\x00\x03`\x00\x00\x05\x04\x00\x00\x02@\x00\x00\x06\x19\x00\x00\x03_\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\x05\x04\x00\x00\x02@\x00\x00\x06\x19\x00\x00\x03_', 'start_date': (2000, 1, 1), 'start_time': (0, 0, 0), 'steps': 1, 'unit': 'Seconds', '__version__': 1}</properties>
+		<properties node_id="2" format="pickle">gASVJwMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAD/////////+AAAB4AAAASAAAAA+QAAAREAAAQyAAADBAAAAAACAAAAB4AAAAAA
+AAAAFwAAB38AAAR/lIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFu
+Z2V3aWRnZXQuc2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZSMBnZhbHVlc5R9lCiMBWF0dHJzlF2U
+XZSMFE9yYW5nZS5kYXRhLnZhcmlhYmxllIwNbWFrZV92YXJpYWJsZZSTlGgRjBJDb250aW51b3Vz
+VmFyaWFibGWUk5ROjBFERVhBSEFSU0VOIDAsNzVNR5SHlFKUfZQojAVfbmFtZZRoFowOX2NvbXB1
+dGVfdmFsdWWUTowLdW5rbm93bl9zdHKUj5QojACUR3/4AAAAAAAATowBfpSMAk5BlIwDbmFulIwB
+P5SMAS6UkIwPc291cmNlX3ZhcmlhYmxllE6MBnNwYXJzZZSJjAphdHRyaWJ1dGVzlH2UjA9fbWF4
+X3JvdW5kX2RpZmaURz6wxvegte2NjBNfbnVtYmVyX29mX2RlY2ltYWxzlEsAjA9hZGp1c3RfZGVj
+aW1hbHOUSwGMC19mb3JtYXRfc3RylIwEJS4wZpR1YmFhjAhpc19sb2dpdJRdlIlhjAlwbG90X3R5
+cGWUXZSMBGxpbmWUYWgESwJ1c2JoCSmBlH2UaAx9lCiMBWF0dHJzlF2UXZRhjAhpc19sb2dpdJRd
+lIlhjAlwbG90X3R5cGWUXZSMBGxpbmWUYWgESwJ1c2JoCSmBlH2UaAx9lChoNV2UXZRhaDhdlIlh
+aDpdlGg8YWgESwJ1c2JoCSmBlH2UaAx9lChoNV2UXZRhaDhdlIlhaDpdlGg8YWgESwJ1c2JoCSmB
+lH2UaAx9lChoNV2UXZRhaDhdlIlhaDpdlGg8YWgESwJ1c2JoCSmBlH2UaAx9lChoNV2UXZRhaDhd
+lIlhaDpdlGg8YWgESwJ1c2JldS4=
+</properties>
+		<properties node_id="3" format="pickle">gASVrAEAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwLYmxvY2tfd2lkdGiUSwWMEmNvbnRyb2xBcmVh
+VmlzaWJsZZSIjA5rZWVwX2luc3RhbmNlc5RLAYwGbWV0aG9klEsAjBJtaWdyYXRlZF9hZ2dyZWdh
+dGWUiYwMcGVyaW9kX3dpZHRolIwFWWVhcnOUjAxyZWZfaW5zdGFuY2WUSwCME3NhdmVkV2lkZ2V0
+R2VvbWV0cnmUQ0IB2dDLAAMAAAAABF8AAAD5AAAGxwAAAxwAAARgAAABGAAABsYAAAMbAAAAAAAA
+AAAHgAAABGAAAAEYAAAGxgAAAxuUjAl1c2VfbmFtZXOUiIwJdmFyX2hpbnRzlH2UKIwHQU5EQUxB
+TpSIhpSPlCiMB2V4cC4gTUGUjARtZWFulJCMBVZJQ0VFlIiGlI+UKGgSaBOQjAdLQURJVElDlIiG
+lI+UKGgSaBOQjAdNRUZJTkFMlIiGlI+UKGgSaBOQjBFERVhBSEFSU0VOIDAsNzVNR5SIhpSPlCho
+EmgTkHWMDHdpbmRvd193aWR0aJRLA4wLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="4" format="pickle">gASV4wIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAD/////////+AAAB4AAAASAAAACIwAAAUYAAAVcAAADOQAAAAACAAAAB4AAAAAA
+AAAAFwAAB38AAAR/lIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5n
+ZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lIwGdmFsdWVzlH2UKIwFYXR0cnOUXZQo
+XZSMFE9yYW5nZS5kYXRhLnZhcmlhYmxllIwNbWFrZV92YXJpYWJsZZSTlGgRjBJDb250aW51b3Vz
+VmFyaWFibGWUk5ROjAdBTkRBTEFOlIeUUpR9lCiMBV9uYW1llGgWjA5fY29tcHV0ZV92YWx1ZZRO
+jAt1bmtub3duX3N0cpSPlCiMAJROjAF+lEd/+AAAAAAAAIwCTkGUjANuYW6UjAE/lIwBLpSQjA9z
+b3VyY2VfdmFyaWFibGWUTowGc3BhcnNllImMCmF0dHJpYnV0ZXOUfZSMD19tYXhfcm91bmRfZGlm
+ZpRHPrDG96C17Y2ME19udW1iZXJfb2ZfZGVjaW1hbHOUSwCMD2FkanVzdF9kZWNpbWFsc5RLAYwL
+X2Zvcm1hdF9zdHKUjAQlLjBmlHViYV2UaBNoFU6MDkFOREFMQU4gKG1lYW4plIeUUpR9lChoGmgu
+aBtOaBxoHWgkTmgliWgmfZRoKEc+sMb3oLXtjWgpSwBoKksBaCtoLHViYV2UaBNoFU6MEUFOREFM
+QU4gKGV4cC4gTUEplIeUUpR9lChoGmg0aBtOaBxoHWgkTmgliWgmfZRoKEc+sMb3oLXtjWgpSwBo
+KksBaCtoLHViYWWMCGlzX2xvZ2l0lF2UKImJiWWMCXBsb3RfdHlwZZRdlCiMBGxpbmWUaD1oPWVo
+BEsCdXNiYXUu
+</properties>
+		<properties node_id="5" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xff\xff\xff\xff\xff\xf8\x00\x00\x07\x80\x00\x00\x04\x80\x00\x00\x04\x05\x00\x00\x01\xce\x00\x00\x07/\x00\x00\x04%\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x07\x7f\x00\x00\x04\x7f', 'scriptLibrary': [{'name': 'Table from numpy', 'script': 'import numpy as np\nimport pandas as pd\nfrom Orange.data.pandas_compat import table_to_frame, table_from_frame\n\n# ------------------------- PENGATURAN -------------------------\nKOLOM_TANGGAL = "minggu_mulai"\nRASIO_LATIH = 0.8                                   # 80% minggu awal = data latih\nNILAI_K = [2, 3, 4]                                 # jendela Moving Average\nNILAI_ALPHA = [round(a / 10, 1) for a in range(1, 10)]   # 0.1 ... 0.9\nAMBANG_MAPE = 5      # minggu dengan penjualan aktual &lt; 5 dikeluarkan dari hitungan MAPE\n                     # (MAPE meledak kalau dibagi angka yang nyaris 0)\n# --------------------------------------------------------------\n\ndf = table_to_frame(in_data, include_metas=True)\nif KOLOM_TANGGAL in df.columns:\n    df = df.sort_values(KOLOM_TANGGAL).reset_index(drop=True)\nobat_list = [c for c in df.columns\n             if c != KOLOM_TANGGAL and pd.api.types.is_numeric_dtype(df[c])]\n\nn = len(df)\nn_latih = int(round(n * RASIO_LATIH))\nmulai_eval = max(NILAI_K)          # semua metode dievaluasi pada minggu yang SAMA\n\n\ndef prediksi_ma(y, k):\n    """Prediksi minggu t = rata-rata k minggu sebelumnya. Minggu awal = NaN."""\n    f = np.full(len(y), np.nan)\n    for t in range(k, len(y)):\n        f[t] = y[t - k:t].mean()\n    return f\n\n\ndef prediksi_ses(y, alpha):\n    """F[t+1] = alpha*y[t] + (1-alpha)*F[t], dengan F[1] = y[0]."""\n    f = np.full(len(y), np.nan)\n    f[1] = y[0]\n    for t in range(1, len(y) - 1):\n        f[t + 1] = alpha * y[t] + (1 - alpha) * f[t]\n    return f\n\n\ndef prediksi_depan_ma(y, k):\n    return y[-k:].mean()\n\n\ndef prediksi_depan_ses(y, alpha):\n    f = prediksi_ses(y, alpha)\n    return alpha * y[-1] + (1 - alpha) * f[-1]\n\n\ndef metrik(y, f, idx):\n    """MAPE (minggu aktual &lt; AMBANG_MAPE dikeluarkan), MAE, RMSE pada indeks idx."""\n    a, p = y[idx], f[idx]\n    ok = ~np.isnan(p)\n    a, p = a[ok], p[ok]\n    nol = int((a &lt; AMBANG_MAPE).sum())\n    nz = a &gt;= AMBANG_MAPE\n    mape = np.mean(np.abs((a[nz] - p[nz]) / a[nz])) * 100 if nz.any() else np.nan\n    mae = np.mean(np.abs(a - p))\n    rmse = np.sqrt(np.mean((a - p) ** 2))\n    return mape, mae, rmse, nol\n\n\nbaris = []\nfor obat in obat_list:\n    y = df[obat].to_numpy(dtype=float)\n    idx_latih = np.arange(mulai_eval, n_latih)\n    idx_uji = np.arange(n_latih, n)\n\n    konfigurasi = ([("Moving Average", f"k={k}", prediksi_ma(y, k), prediksi_depan_ma(y, k))\n                    for k in NILAI_K] +\n                   [("SES", f"alpha={a}", prediksi_ses(y, a), prediksi_depan_ses(y, a))\n                    for a in NILAI_ALPHA])\n\n    for metode, param, f, f_depan in konfigurasi:\n        mape_l, _, _, _ = metrik(y, f, idx_latih)\n        mape_u, mae_u, rmse_u, nol_u = metrik(y, f, idx_uji)\n        baris.append({\n            "obat": obat, "metode": metode, "parameter": param,\n            "MAPE_latih_%": round(mape_l, 2), "MAPE_uji_%": round(mape_u, 2),\n            "MAE_uji": round(mae_u, 1), "RMSE_uji": round(rmse_u, 1),\n            "minggu_dikeluarkan_uji": nol_u, "prediksi_minggu_depan": round(f_depan, 1),\n        })\n\nhasil = pd.DataFrame(baris)\n\n# Parameter terbaik dipilih dari MAPE data LATIH (bukan data uji), lalu dilaporkan MAPE ujinya\nterbaik = (hasil.sort_values("MAPE_latih_%")\n           .groupby(["obat", "metode"], as_index=False).first())\n\nprint("=== PARAMETER TERBAIK per obat per metode (dipilih dari MAPE data latih) ===")\nprint(terbaik[["obat", "metode", "parameter", "MAPE_latih_%", "MAPE_uji_%",\n               "prediksi_minggu_depan"]].to_string(index=False))\nprint("\\nMinggu latih:", n_latih, "| minggu uji:", n - n_latih,\n      "| minggu pertama yang dievaluasi: ke-", mulai_eval + 1)\n\n# Output ke Data Table: semua kombinasi (bisa diurutkan di Data Table)\nout_data = table_from_frame(hasil)\n\n# Orange versi baru menutup script dengan:\n#   return out_data, out_learner, out_classifier, out_object\n# jadi tiga variabel ini harus ada (boleh kosong).\nout_learner = None\nout_classifier = None\nout_object = None', 'filename': None}], 'scriptText': 'import numpy as np\nimport pandas as pd\nfrom Orange.data.pandas_compat import table_to_frame, table_from_frame\n\n# ------------------------- PENGATURAN -------------------------\nKOLOM_TANGGAL = "minggu_mulai"\nRASIO_LATIH = 0.8                                   # 80% minggu awal = data latih\nNILAI_K = [2, 3, 4]                                 # jendela Moving Average\nNILAI_ALPHA = [round(a / 10, 1) for a in range(1, 10)]   # 0.1 ... 0.9\nAMBANG_MAPE = 5      # minggu dengan penjualan aktual &lt; 5 dikeluarkan dari hitungan MAPE\n                     # (MAPE meledak kalau dibagi angka yang nyaris 0)\n# --------------------------------------------------------------\n\ndf = table_to_frame(in_data, include_metas=True)\nif KOLOM_TANGGAL in df.columns:\n    df = df.sort_values(KOLOM_TANGGAL).reset_index(drop=True)\nobat_list = [c for c in df.columns\n             if c != KOLOM_TANGGAL and pd.api.types.is_numeric_dtype(df[c])]\n\nn = len(df)\nn_latih = int(round(n * RASIO_LATIH))\nmulai_eval = max(NILAI_K)          # semua metode dievaluasi pada minggu yang SAMA\n\n\ndef prediksi_ma(y, k):\n    """Prediksi minggu t = rata-rata k minggu sebelumnya. Minggu awal = NaN."""\n    f = np.full(len(y), np.nan)\n    for t in range(k, len(y)):\n        f[t] = y[t - k:t].mean()\n    return f\n\n\ndef prediksi_ses(y, alpha):\n    """F[t+1] = alpha*y[t] + (1-alpha)*F[t], dengan F[1] = y[0]."""\n    f = np.full(len(y), np.nan)\n    f[1] = y[0]\n    for t in range(1, len(y) - 1):\n        f[t + 1] = alpha * y[t] + (1 - alpha) * f[t]\n    return f\n\n\ndef prediksi_depan_ma(y, k):\n    return y[-k:].mean()\n\n\ndef prediksi_depan_ses(y, alpha):\n    f = prediksi_ses(y, alpha)\n    return alpha * y[-1] + (1 - alpha) * f[-1]\n\n\ndef metrik(y, f, idx):\n    """MAPE (minggu aktual &lt; AMBANG_MAPE dikeluarkan), MAE, RMSE pada indeks idx."""\n    a, p = y[idx], f[idx]\n    ok = ~np.isnan(p)\n    a, p = a[ok], p[ok]\n    nol = int((a &lt; AMBANG_MAPE).sum())\n    nz = a &gt;= AMBANG_MAPE\n    mape = np.mean(np.abs((a[nz] - p[nz]) / a[nz])) * 100 if nz.any() else np.nan\n    mae = np.mean(np.abs(a - p))\n    rmse = np.sqrt(np.mean((a - p) ** 2))\n    return mape, mae, rmse, nol\n\n\nbaris = []\nfor obat in obat_list:\n    y = df[obat].to_numpy(dtype=float)\n    idx_latih = np.arange(mulai_eval, n_latih)\n    idx_uji = np.arange(n_latih, n)\n\n    konfigurasi = ([("Moving Average", f"k={k}", prediksi_ma(y, k), prediksi_depan_ma(y, k))\n                    for k in NILAI_K] +\n                   [("SES", f"alpha={a}", prediksi_ses(y, a), prediksi_depan_ses(y, a))\n                    for a in NILAI_ALPHA])\n\n    for metode, param, f, f_depan in konfigurasi:\n        mape_l, _, _, _ = metrik(y, f, idx_latih)\n        mape_u, mae_u, rmse_u, nol_u = metrik(y, f, idx_uji)\n        baris.append({\n            "obat": obat, "metode": metode, "parameter": param,\n            "MAPE_latih_%": round(mape_l, 2), "MAPE_uji_%": round(mape_u, 2),\n            "MAE_uji": round(mae_u, 1), "RMSE_uji": round(rmse_u, 1),\n            "minggu_dikeluarkan_uji": nol_u, "prediksi_minggu_depan": round(f_depan, 1),\n        })\n\nhasil = pd.DataFrame(baris)\n\n# Parameter terbaik dipilih dari MAPE data LATIH (bukan data uji), lalu dilaporkan MAPE ujinya\nterbaik = (hasil.sort_values("MAPE_latih_%")\n           .groupby(["obat", "metode"], as_index=False).first())\n\nprint("=== PARAMETER TERBAIK per obat per metode (dipilih dari MAPE data latih) ===")\nprint(terbaik[["obat", "metode", "parameter", "MAPE_latih_%", "MAPE_uji_%",\n               "prediksi_minggu_depan"]].to_string(index=False))\nprint("\\nMinggu latih:", n_latih, "| minggu uji:", n - n_latih,\n      "| minggu pertama yang dievaluasi: ke-", mulai_eval + 1)\n\n# Output ke Data Table: semua kombinasi (bisa diurutkan di Data Table)\nout_data = table_from_frame(hasil)\n\n# Orange versi baru menutup script dengan:\n#   return out_data, out_learner, out_classifier, out_object\n# jadi tiga variabel ini harus ada (boleh kosong).\nout_learner = None\nout_classifier = None\nout_object = None', 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xa1\x00\x00\x00b\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+		<properties node_id="6" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\xff\xff\xff\xff\xff\xff\xff\xf8\x00\x00\x07\x80\x00\x00\x04\x80\x00\x00\x020\x00\x00\x01F\x00\x00\x05O\x00\x00\x039\x00\x00\x00\x00\x02\x00\x00\x00\x07\x80\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x07\x7f\x00\x00\x04\x7f', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
