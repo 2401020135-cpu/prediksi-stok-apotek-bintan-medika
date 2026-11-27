@@ -1,0 +1,85 @@
+Folder: c:\prepro-stok
+Jumlah file: 5
+
+--- ANDALAN (Strip) ---
+  Baris transaksi mentah: 1,508
+  Baris opname tanpa perubahan stok dibuang: 1
+  Urut waktu: OK | No dobel: 0 | Sisa dihitung ulang tidak cocok: 0 | Total = baris 'stok akhir': OK
+  Stok minus: 0 baris | Rentang: 2025-10-01 s/d 2026-09-30
+  Ringkasan per jenis:
+               baris  masuk  keluar
+    jenis                          
+    Opname        20    904    1004
+    Pembelian     13   2400       0
+    Penjualan   1463      0    2483
+    VOID          11     17       0
+
+--- DEXAHARSEN 0,75MG (Tablet) ---
+  Baris transaksi mentah: 542
+  Baris opname tanpa perubahan stok dibuang: 5
+  Urut waktu: OK | No dobel: 0 | Sisa dihitung ulang tidak cocok: 0 | Total = baris 'stok akhir': OK
+  Stok minus: 0 baris | Rentang: 2025-10-01 s/d 2026-09-30
+  Ringkasan per jenis:
+               baris  masuk  keluar
+    jenis                          
+    Opname         9    240     590
+    Pembelian      5   7600       0
+    Penjualan    521      0    9590
+    VOID           2    220       0
+
+--- KADITIC (Tablet) ---
+  Baris transaksi mentah: 1,521
+  Baris opname tanpa perubahan stok dibuang: 1
+  Urut waktu: OK | No dobel: 0 | Sisa dihitung ulang tidak cocok: 0 | Total = baris 'stok akhir': OK
+  Stok minus: 0 baris | Rentang: 2025-10-01 s/d 2026-09-30
+  Ringkasan per jenis:
+               baris  masuk  keluar
+    jenis                          
+    Opname        11     70     570
+    Pembelian     15  19500       0
+    Penjualan   1487      0   20660
+    VOID           7    100       0
+
+--- MEFINAL (Tablet) ---
+  Baris transaksi mentah: 840
+  Baris opname tanpa perubahan stok dibuang: 0
+  Urut waktu: OK | No dobel: 0 | Sisa dihitung ulang tidak cocok: 0 | Total = baris 'stok akhir': OK
+  Stok minus: 0 baris | Rentang: 2025-10-01 s/d 2026-09-30
+  Ringkasan per jenis:
+               baris  masuk  keluar
+    jenis                          
+    Opname        14    985    1255
+    Pembelian     12   9800       0
+    Penjualan    808      0    9625
+    VOID           6     60       0
+
+--- VICEE (Pcs) ---
+  Baris transaksi mentah: 2,678
+  Baris opname tanpa perubahan stok dibuang: 0
+  Urut waktu: OK | No dobel: 0 | Sisa dihitung ulang tidak cocok: 0 | Total = baris 'stok akhir': OK
+  Stok minus: 0 baris | Rentang: 2025-10-01 s/d 2026-09-30
+  Ringkasan per jenis:
+               baris  masuk  keluar
+    jenis                          
+    Opname        15   1973    2581
+    Pembelian      8   6500       0
+    Penjualan   2639      0    6328
+    VOID          16     49       0
+
+=== RINGKASAN ===
+obat                        ANDALAN DEXAHARSEN 0,75MG KADITIC MEFINAL  VICEE
+satuan                        Strip            Tablet  Tablet  Tablet    Pcs
+stok_awal_1okt2025            221.0            2480.0  1720.0    35.0  802.0
+stok_akhir_30sep2026           55.0             360.0   160.0     0.0  415.0
+jumlah_pembelian                 13                 5      15      12      8
+total_pembelian                2400              7600   19500    9800   6500
+rata2_per_pembelian           184.6            1520.0  1300.0   816.7  812.5
+selang_pembelian_rata2_hari    24.8              62.5    20.7    32.6   58.0
+penjualan_kotor                2483              9590   20660    9625   6328
+pembatalan_void                  17               220     100      60     49
+penjualan_bersih               2466              9370   20560    9565   6279
+opname_masuk                    904               240      70     985   1973
+opname_keluar                  1004               590     570    1255   2581
+hari_stok_habis                   9                 4      41      34      1
+
+Hasil di: c:\prepro-stok\hasil_preprocessing_stok
