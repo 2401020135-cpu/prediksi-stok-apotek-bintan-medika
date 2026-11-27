@@ -1,0 +1,17 @@
+# Python & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Sistem Operasi & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Data Mentah Besar & Privasi Transaksi Apotek
+data_mentah/
+Transaksi_*.xlsx
+*Kartu Stok*.xlsx
