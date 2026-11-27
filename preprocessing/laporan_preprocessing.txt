@@ -1,0 +1,45 @@
+Preprocessing dijalankan 2026-10-29 22:00
+Folder input: c:\Project Data Mining
+
+=== TAHAP 2: DATA INTEGRATION ===
+  Transaksi_20251001_20251231.xlsx: 32,279 baris
+  Transaksi_20260101_20260331.xlsx: 27,530 baris
+  Transaksi_20260401_20260630.xlsx: 26,320 baris
+  Transaksi_20260701_20260930.xlsx: 24,444 baris
+  Total setelah digabung: 110,573 baris dari 4 file
+
+=== TAHAP 1: DATA CLEANING ===
+  Baris kosong dibuang: 0
+  Tanggal teks -> datetime: OK
+  Nama produk dengan spasi nyangkut diperbaiki: 841 baris
+  Koreksi typo nama: 37 baris
+  Nama sama tapi kode beda, dibedakan dengan satuan: ['IBUPROFEN 400 BALATIF', 'LAXAREC', 'MKP 12JAM 60ML']
+  Validasi Jumlah (semua > 0): OK
+  Baris dobel (struk+produk+jumlah+harga+waktu sama) dibuang: 204
+  Rentang data: 2025-10-01 s/d 2026-09-30 (365 hari)
+  PERINGATAN: 4 hari tidak ada transaksi sama sekali (file ada yang kelewat?): [datetime.date(2026, 3, 21), datetime.date(2026, 3, 22), datetime.date(2026, 3, 23), datetime.date(2026, 5, 27)]
+
+=== TAHAP 3: DATA SELECTION ===
+  Kolom dipakai: ['Tanggal Transaksi', 'Kode Struk', 'Kode Produk', 'Nama Produk', 'Jumlah', 'Satuan', 'Harga Jual']
+  Non-obat difilter: 6,672 baris dari 107 produk (daftar lengkap: produk_non_obat_terfilter.csv, cek manual ya)
+  Baris ditandai pembelian grosir: 1118 (Jumlah >= 100 dan >= 10x median produk)
+  Hari dengan grosir terbesar: 2025-11-16 (6,980 unit), 2025-12-11 (3,950 unit), 2025-10-11 (3,820 unit)
+  Total produk obat: 2,883; muncul >= 80% hari: 3; muncul < 10% hari: 2321  (mayoritas = permintaan putus-putus)
+  Obat terpilih (otomatis (top 5 berdasarkan hari terjual)):
+    - ANDALAN: 343 hari terjual, total 2,464 Strip
+    - VICEE: 326 hari terjual, total 6,279 Pcs
+    - KADITIC: 311 hari terjual, total 20,500 Tablet
+    - MEFINAL: 270 hari terjual, total 9,530 Tablet
+    - DEXAHARSEN 0,75MG: 268 hari terjual, total 9,350 Tablet
+
+=== TAHAP 4: DATA TRANSFORMATION ===
+  Jumlah minggu: 53 (tidak penuh 7 hari: 2, dibuang dari tabel siap pakai)
+  Tabel mingguan siap pakai: 51 minggu x 5 obat
+
+=== SELESAI === File hasil di: c:\Project Data Mining\hasil_preprocessing
+  - data_bersih_harian.csv
+  - data_mingguan_long.csv
+  - data_mingguan_siap_olah.xlsx
+  - ringkasan_produk.csv
+  - produk_non_obat_terfilter.csv
+  - laporan_preprocessing.txt
